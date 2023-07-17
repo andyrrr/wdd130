@@ -19,6 +19,12 @@ h4 nav a {
 
 }
 
+h1{
+    grid-column: 5/7;
+    text-align: center;
+    font-size: 4em;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -192,7 +198,7 @@ footer .social img {
     width: 100%;
 }
 
-.rivers-card, .camping-card, .rapids-card{
+.rivers-card, .camping-card, .rapids-card, .river-card{
     margin: 200px 0;
 }   
 
@@ -238,7 +244,18 @@ footer .social img {
     transform: scale(1.1);
 }
 
-.card-img, .mountains {
+.river-img{
+    border: 10px solid #93abd5;
+    border: 10px solid #93abd5;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.river-img:hover {
+    transform: scale(1.01);
+}
+
+.card-img, .mountains , .river-img{
     width: 100%;
 }
 
@@ -271,7 +288,7 @@ main section img {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card , .river-card{ 
         margin: 50px auto;
         width: 60%;
     }
