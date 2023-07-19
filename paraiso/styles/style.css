@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #493657   ;
+  --secondary-color: #DDCECD ;
+  --accent1-color: #D17A22;
+  --accent2-color: #EEE5E5;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Anton';
+  --paragraph-font: Roboto, Helvetica;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    padding: 1em;
+  }
+
+header {
+    display: grid;
+    grid-template-columns: 400px auto;
+    font-family: var(--heading-font);
+    background-color: var(--accent1-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+    padding: 35px;
+}
+
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.logo {
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+} 
+
+footer {
+    background-color: var(--accent1-color);
+    padding: 10px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.8em;
+    font-family: var(--heading-font);
+} 
+
+footer p a:hover {
+    text-decoration: underline;
+}
